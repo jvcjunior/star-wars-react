@@ -19,6 +19,8 @@ import './index.css'
 //   </Provider>,
 //   target
 // )
+//document.getElementById('myaudio').play();
+
 ReactDOM.render(
    <Provider store={store}>
     <ConnectedRouter history={history}>
