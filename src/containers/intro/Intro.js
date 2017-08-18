@@ -10,6 +10,11 @@ class Intro extends Component {
 
   componentDidMount() {
       setTimeout(this.props.hide, 7000);
+      var audio = new Audio('../../assets/audio/intro.mp3');
+      audio.crossorigin = 'anonymous';
+      audio.setAttribute('crossorigin', 'anonymous');
+      audio.load();
+      audio.play();
   }
 
   render() {
