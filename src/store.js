@@ -4,12 +4,15 @@ import thunk from 'redux-thunk'
 import createHistory from 'history/createBrowserHistory'
 import rootReducer from './modules'
 
+import logger from 'redux-logger'
+
 export const history = createHistory()
 
 const initialState = {}
 const enhancers = []
 const middleware = [
   thunk,
+  logger,
   routerMiddleware(history)
 ]
 
