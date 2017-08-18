@@ -1,0 +1,60 @@
+.fade {
+  animation: fade 1s forwards;
+}
+
+@keyframes fade {
+  0%   { opacity: 1; }
+  100% { opacity: 0; display: none;}
+}
+
+#custom-overlay {
+    background: url('../../assets/img/galaxy.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000000;
+    width: 100%;
+    background-color:transparent;
+}
+
+#perspective
+{
+	/*background-color: #000;*/
+	position: absolute;
+	width: 18em;
+	height: 70em;
+	bottom: 0;
+	left: 50%;
+	margin-left: -9em;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+}
+
+#perspective img {
+    width: 250px;/*100vw*/;
+    display: block;
+    margin: 0 auto;
+}
+
+#perspective-content
+{
+	position: absolute;
+	top: 100%;
+	-webkit-animation: scroll 8s linear 1s infinite;
+	animation: scroll 8s linear 1s infinite;
+}
+
+/* animation */
+@-webkit-keyframes scroll {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-800px); }
+}
+
+@keyframes scroll {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(-800px); }
+}
