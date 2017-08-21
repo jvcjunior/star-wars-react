@@ -7,26 +7,10 @@ import App from './containers/app'
 
 import './index.css'
 
-//const target = document.querySelector('#root')
-
-// render(
-//   <Provider store={store}>
-//     <ConnectedRouter history={history}>
-//       <div>
-//         <App />
-//       </div>
-//     </ConnectedRouter>
-//   </Provider>,
-//   target
-// )
-//document.getElementById('myaudio').play();
-
 ReactDOM.render(
    <Provider store={store}>
     <ConnectedRouter history={history}>
-      <div>
-        <App />
-      </div>
+      <App />
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')

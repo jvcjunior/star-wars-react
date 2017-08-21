@@ -6,10 +6,8 @@ import Intro from '../intro'
 const App = () => (
   <div>
     <header>
-      <Link to="/">Intro</Link>
-      <Link to="/home">Home</Link>
+      HEADER
     </header>
-
     <main>
       <Route exact path="/" component={Intro} />
       <Route exact path="/home" component={Home} />
@@ -18,3 +16,4 @@ const App = () => (
 )
 
 export default App
+//https://dribbble.com/Eray
